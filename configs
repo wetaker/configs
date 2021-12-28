@@ -3,11 +3,11 @@
 export FZF_COMPLETION_OPTS='--border --info=inline'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 _fzf_compgen_path() {
-    fd --hidden --follow --exclude ".git" . "$1"
+    fd --hidden --follow --exclude ".git" . ~
 }
 
 _fzf_compgen_dir() {
-    fd --hidden --follow --exclude ".git" . "$1"z
+    fd --hidden --follow --exclude ".git" . ~
 }
 
 export FZF_DEFAULT_COMMAND='fd'
