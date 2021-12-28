@@ -13,6 +13,7 @@ rm install.sh
 echo "Installing homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"chmod +x install.sh
 echo "export PATH=/opt/homebrew/bin:$PATH" >> ~/.zshrc
+source ~/.zshrc
 
 # Install coreutils
 brew install coreutils
